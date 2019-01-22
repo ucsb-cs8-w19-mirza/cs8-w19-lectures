@@ -1,0 +1,277 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 >>> \
+\
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> \
+>>> lst = [ 1, 2, 3, 4]\
+>>> name = "Diba"\
+>>> name[0]\
+'D'\
+>>> lst = [10, 20, 30, 40]\
+>>> lst[0]\
+10\
+>>> lst[1]\
+20\
+>>> lst[-1]\
+40\
+>>> lst=["apple", 10, 10.5]\
+>>> lst[0]\
+'apple'\
+>>> lst[1]\
+10\
+>>> lst[-1]\
+10.5\
+>>> lst = [[1, 2, 3], "UCSB", 3]\
+>>> lst[0]\
+[1, 2, 3]\
+>>> lst[1]\
+'UCSB'\
+>>> lst[1]\
+'UCSB'\
+>>> lst[1]+ " Hello"\
+'UCSB Hello'\
+>>> lst[1] * 2\
+'UCSBUCSB'\
+>>> lst\
+[[1, 2, 3], 'UCSB', 3]\
+>>> lst[0:2]\
+[[1, 2, 3], 'UCSB']\
+>>> lst\
+[[1, 2, 3], 'UCSB', 3]\
+>>> lst*2\
+[[1, 2, 3], 'UCSB', 3, [1, 2, 3], 'UCSB', 3]\
+>>> lst = [10, 10, 30]\
+>>> lst[0]\
+10\
+>>> lst[1]\
+10\
+>>> x = 10\
+>>> y = "UCSB"\
+>>> lst = [x, y]\
+>>> lst\
+[10, 'UCSB']\
+>>> x = 100\
+>>> lst\
+[10, 'UCSB']\
+>>> name = "peacok"\
+>>> animal = " peacock"\
+>>> animal[3]\
+'a'\
+>>> animal[3] = o\
+Traceback (most recent call last):\
+  File "<pyshell#49>", line 1, in <module>\
+    animal[3] = o\
+NameError: name 'o' is not defined\
+>>> animal[0:2]\
+' p'\
+>>> animal\
+' peacock'\
+>>> animal = 'peacock'\
+>>> animal[0:2]\
+'pe'\
+>>> smallAnimal = animal[0:2]\
+>>> smallAnimal\
+'pe'\
+>>> lst = ["eggs","bread", "chocolate"]\
+>>> lst[0] = "milk"\
+>>> lst\
+['milk', 'bread', 'chocolate']\
+>>> dir(lst)\
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']\
+>>> lst\
+['milk', 'bread', 'chocolate']\
+>>> help(lst.append)\
+Help on built-in function append:\
+\
+append(...) method of builtins.list instance\
+    L.append(object) -> None -- append object to end\
+\
+>>> lst.append("butter")\
+>>> lst\
+['milk', 'bread', 'chocolate', 'butter']\
+>>> help(lst.remove)\
+Help on built-in function remove:\
+\
+remove(...) method of builtins.list instance\
+    L.remove(value) -> None -- remove first occurrence of value.\
+    Raises ValueError if the value is not present.\
+\
+>>> lst\
+['milk', 'bread', 'chocolate', 'butter']\
+>>> lst.remove('butter')\
+>>> lst\
+['milk', 'bread', 'chocolate']\
+>>> lst.remove('milk')\
+>>> lst\
+['bread', 'chocolate']\
+>>> lst.index('bread')\
+0\
+>>> lst\
+['bread', 'chocolate']\
+>>> lst.remove(lst[0])\
+>>> lst\
+['chocolate']\
+>>> lst\
+['chocolate']\
+>>> lst.append("toothbrush")\
+>>> lst.remove(lst[0:1])\
+Traceback (most recent call last):\
+  File "<pyshell#76>", line 1, in <module>\
+    lst.remove(lst[0:1])\
+ValueError: list.remove(x): x not in list\
+>>> lst = [20, 40, 60, 33, 1, -90]\
+>>> lst.sort()\
+>>> lst\
+[-90, 1, 20, 33, 40, 60]\
+>>> help(lst.sort)\
+Help on built-in function sort:\
+\
+sort(...) method of builtins.list instance\
+    L.sort(key=None, reverse=False) -> None -- stable sort *IN PLACE*\
+\
+>>> lst.sort(reverse = True)\
+>>> lst\
+[60, 40, 33, 20, 1, -90]\
+>>> lst = [ 1, "UCSB"]\
+>>> lst.sort()\
+Traceback (most recent call last):\
+  File "<pyshell#84>", line 1, in <module>\
+    lst.sort()\
+TypeError: '<' not supported between instances of 'str' and 'int'\
+>>> 3 <5\
+True\
+>>> 3< "apple"\
+Traceback (most recent call last):\
+  File "<pyshell#86>", line 1, in <module>\
+    3< "apple"\
+TypeError: '<' not supported between instances of 'int' and 'str'\
+>>> lst\
+[1, 'UCSB']\
+>>> name\
+'peacok'\
+>>> 'p' in name\
+True\
+>>> 'z' in name\
+False\
+>>> lst\
+[1, 'UCSB']\
+>>> 'U' in lst\
+False\
+>>> 'UCSB' in lst\
+True\
+>>> 'U' in lst[1]\
+True\
+>>> lst\
+[1, 'UCSB']\
+>>> lst.count('UCSB')\
+1\
+>>> lst.append("UCSB")\
+>>> lst\
+[1, 'UCSB', 'UCSB']\
+>>> lst.count('UCSB')\
+2\
+>>> tt = (1, 10, 50)\
+>>> tt[0] = 50\
+Traceback (most recent call last):\
+  File "<pyshell#101>", line 1, in <module>\
+    tt[0] = 50\
+TypeError: 'tuple' object does not support item assignment\
+>>> tt[0]\
+1\
+>>> tt[1]\
+10\
+>>> tt\
+(1, 10, 50)\
+>>> tt[-1]\
+50\
+>>> tt = ("hen", 100)\
+>>> tt[0]\
+'hen'\
+>>> dir(tuple_\
+    \
+KeyboardInterrupt\
+>>> KeyboardInterrupt\
+<class 'KeyboardInterrupt'>\
+\
+>>> dir(tuple)\
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']\
+>>> ter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex_\
+SyntaxError: invalid syntax\
+>>> ter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex_\
+>>> \
+>>> mystring = ''\
+>>> mystring = str()\
+>>> mystring\
+''\
+>>> lst = []\
+>>> lst2 = list()\
+>>> tup = ()\
+>>> tup = tuple()\
+>>> tup\
+()\
+>>> tup = (10)\
+>>> tup\
+10\
+>>> tup[0]\
+Traceback (most recent call last):\
+  File "<pyshell#124>", line 1, in <module>\
+    tup[0]\
+TypeError: 'int' object is not subscriptable\
+>>> tup = (10)\
+>>> tup\
+10\
+>>> 2*5+3\
+13\
+>>> 2*(5+3)\
+16\
+>>> tup = (10,)\
+>>> tup\
+(10,)\
+>>> type(tup)\
+<class 'tuple'>\
+>>> x = (10)\
+>>> type(x)\
+<class 'int'>\
+>>> board=['-', '-','x','x','o',['-']*3  ]\
+>>> board\
+['-', '-', 'x', 'x', 'o', ['-', '-', '-']]\
+>>> ['-']*4\
+['-', '-', '-', '-']\
+>>> ['-', '-', 'x', 'x', 'o'] + ['-']*4\
+['-', '-', 'x', 'x', 'o', '-', '-', '-', '-']\
+>>> board=[['-', '-', 'x'],['x', 'o', '-'], ['-']*3]\
+>>> board\
+[['-', '-', 'x'], ['x', 'o', '-'], ['-', '-', '-']]\
+>>> board[0]\
+['-', '-', 'x']\
+>>> board[1]\
+['x', 'o', '-']\
+>>> board[2]\
+['-', '-', '-']\
+>>> print(board)\
+[['-', '-', 'x'], ['x', 'o', '-'], ['-', '-', '-']]\
+>>> board[0]\
+['-', '-', 'x']\
+>>> board[0][0]\
+'-'\
+>>> board[0][0] ='x'\
+>>> board\
+[['x', '-', 'x'], ['x', 'o', '-'], ['-', '-', '-']]\
+>>> }
