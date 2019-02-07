@@ -16,7 +16,7 @@ def fancyCircle(t, radius, penColor, fillColor):
     return
 
 print(__name__)
-if __name__ =="__main__":
+if __name__=="__main__":
     jane = turtle.Turtle() # Jane is a turtle object
     jane.speed(0)
     fancyCircle(jane, 100, "red", "red") 

@@ -17,6 +17,7 @@ fred.width(4)
 drawL(fred, 50, 100)
 
 def quadratic(a, b, c, x):
+    
     '''return ax^2+bx+c
     If any of a, b, c, x is not
     an integer return 0'''
@@ -27,7 +28,7 @@ def quadratic(a, b, c, x):
     result =  a*x**2+b*x+c
     return result
 
-def quadratic(a, b, c, x):
+def quadratic_2(a, b, c, x):
     # This is also correct
     if type(a) == int and type(b)==int and type(c)==int:
         return a*x**2+b*x+c
