@@ -1,0 +1,6 @@
+duck
+cow
+cat
+horse
+pig
+parrot
