@@ -32,7 +32,7 @@ def setPassword():
     # and contains'#'
     # e.g. ahiuo#17272 is valid
     # abc is invalid
-
+    valid = False
     while not valid:
         psswrd = input("Enter your password :")
         valid = (len(psswrd)>8) and ('#' in psswrd)
