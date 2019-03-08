@@ -1,0 +1,221 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 >>> lst = ["CA", "NV", "AZ", "WA", "OR"]\
+>>> capitols = \{"CA": "Sacramento", "NV": "Carson City","AZ":"Phoneix", "WA":"Seattle","OR":"Portland"\}\
+>>> type(capitols)\
+<class 'dict'>\
+>>> capitols[0]\
+Traceback (most recent call last):\
+  File "<pyshell#59>", line 1, in <module>\
+    capitols[0]\
+KeyError: 0\
+>>> capitols["CA"]\
+'Sacramento'\
+>>> len(capitols["OR"])\
+8\
+>>> capitols["OR"][4:8]\
+'land'\
+>>> \
+>>> ]\
+SyntaxError: invalid syntax\
+>>> \
+>>> \
+>>> \
+>>> \
+>>> positionInRace=\{"Mary": 4, "Joe":3, "Diba": 1, "Adib": 2\}\
+>>> positionInRace[1]\
+Traceback (most recent call last):\
+  File "<pyshell#70>", line 1, in <module>\
+    positionInRace[1]\
+KeyError: 1\
+>>> positionInRace.keys()\
+dict_keys(['Mary', 'Joe', 'Diba', 'Adib'])\
+>>> lst=list(positionInRace.keys())\
+>>> lst\
+['Mary', 'Joe', 'Diba', 'Adib']\
+>>> for item in positionInRace:\
+	print(item)\
+\
+	\
+Mary\
+Joe\
+Diba\
+Adib\
+>>> winner = ""\
+>>> for item in positionInRace:\
+	1\
+\
+	\
+1\
+1\
+1\
+1\
+>>> positionInRace["Diba"]\
+1\
+>>> positionInRace["Mary"]\
+4\
+>>> for item in positionInRace:\
+	if positionInRace[item] == 1:\
+		winner = item\
+\
+		\
+>>> winner\
+'Diba'\
+>>> for item in positionInRace:\
+	if positionInRace[item] == 1:\
+		return item\
+	\
+SyntaxError: 'return' outside function\
+>>> positionInRace=\{4:"Mary", 3:"Joe", 1:"Diba", 2:"Adib"\}\
+>>> winner = positionInRace[1]\
+>>> winner\
+'Diba'\
+>>> \
+======= RESTART: /Users/diba/git/cs8/cs8-w19-lectures/lect-15/birds.py =======\
+>>> kinds =[]\
+>>> counts=[]\
+>>> new_sighting(kinds, counts, 'owl')\
+>>> kinds\
+['owl']\
+>>> counts\
+[1]\
+>>> new_sighting(kinds, counts, 'falcon')\
+>>> kinds\
+['owl', 'falcon']\
+>>> counts\
+[1, 1]\
+>>> new_sighting(kinds, counts, 'falcon')\
+>>> kinds\
+['owl', 'falcon']\
+>>> counts\
+[1, 2]\
+>>> positionInRace\
+Traceback (most recent call last):\
+  File "<pyshell#101>", line 1, in <module>\
+    positionInRace\
+NameError: name 'positionInRace' is not defined\
+>>> positionInRace=\{"Mary": 4, "Joe":3, "Diba": 1, "Adib": 2\}\
+>>> positionInRace["Jack"] = 5\
+>>> positionInRace\
+\{'Mary': 4, 'Joe': 3, 'Diba': 1, 'Adib': 2, 'Jack': 5\}\
+>>> positionInRace["Diba"] = 5\
+>>> positionInRace\
+\{'Mary': 4, 'Joe': 3, 'Diba': 5, 'Adib': 2, 'Jack': 5\}\
+>>> \
+======= RESTART: /Users/diba/git/cs8/cs8-w19-lectures/lect-15/birds.py =======\
+>>> bird_dict = \{\}\
+>>> \
+======= RESTART: /Users/diba/git/cs8/cs8-w19-lectures/lect-15/birds.py =======\
+>>> bird_dict = \{\}\
+>>> new_sighting2(bird_dict, 'falcon')\
+>>> bird_dict\
+\{'falcon': 1\}\
+>>> new_sighting2(bird_dict, 'owl')\
+>>> bird_dict\
+\{'falcon': 1, 'owl': 1\}\
+>>> new_sighting2(bird_dict, 'owl')\
+>>> bird_dict\
+\{'falcon': 1, 'owl': 2\}\
+>>> new_sighting2(bird_dict, 'crow')\
+>>> bird_dict\
+\{'falcon': 1, 'owl': 2, 'crow': 1\}\
+>>> bird_dict['owl']\
+2\
+>>> bird_dict['owl']=20\
+>>> bird_dict\
+\{'falcon': 1, 'owl': 20, 'crow': 1\}\
+>>> bird_dict['pigeon'] = 5\
+>>> bird_dict\
+\{'falcon': 1, 'owl': 20, 'crow': 1, 'pigeon': 5\}\
+>>> print(bird_dict['cow'])\
+Traceback (most recent call last):\
+  File "<pyshell#122>", line 1, in <module>\
+    print(bird_dict['cow'])\
+KeyError: 'cow'\
+>>> bird_dict.get('cow', 0)\
+0\
+>>> bird_dict\
+\{'falcon': 1, 'owl': 20, 'crow': 1, 'pigeon': 5\}\
+>>> bird_dict.get('cow', 10)\
+10\
+>>> "\{:<"+"\{0\}".format(x)+"\}"\
+Traceback (most recent call last):\
+  File "<pyshell#126>", line 1, in <module>\
+    "\{:<"+"\{0\}".format(x)+"\}"\
+NameError: name 'x' is not defined\
+>>> x = 10\
+>>> "\{:<"+"\{0\}".format(x)+"\}"\
+'\{:<10\}'\
+>>> "".format(10)\
+''\
+>>> "\{0\}".format(10)\
+'10'\
+>>> s1="\{0\}"\
+>>> dir(str)\
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']\
+>>> s1.count('0')\
+1\
+>>> s1\
+'\{0\}'\
+>>> "\{0\}".count('0')\
+1\
+>>> "\{0\}".format(10)\
+'10'\
+>>> "\{0\}\{0\}".format(10)\
+'1010'\
+>>> "\{1\}\{0\}".format(10, 20)\
+'2010'\
+>>> word = "apple"\
+>>> "\{0:4\}".format(10)\
+'  10'\
+>>> "\{0:<4\}".format(10)\
+'10  '\
+>>> "\{0:<4\}\{1\}".format(10,20)\
+'10  20'\
+>>> "\{0:<4\}\{1\}".format(100,20)\
+'100 20'\
+>>> "\{0:<4\}\{1\}".format(1000000,20)\
+'100000020'\
+>>> word = "apple"\
+>>> s= "\{0:9\}\{1\}".format(word, 5)\
+>>> \
+>>> s\
+'apple    5'\
+>>> s= "\{0:9\}\{1:2\}".format(word, 5)\
+>>> s= "\{0:9\}\{1:2\}".format(word, 15)\
+>>> s\
+'apple    15'\
+>>> s= "\{0:9\}\{1:2\}".format(word, 5)\
+>>> s\
+'apple     5'\
+>>> s= "\{0:len(word)+4\}\{1:2\}".format(word, 5)\
+Traceback (most recent call last):\
+  File "<pyshell#154>", line 1, in <module>\
+    s= "\{0:len(word)+4\}\{1:2\}".format(word, 5)\
+ValueError: Invalid format specifier\
+>>> filname = 'palpe'\
+>>> len(filename)\
+Traceback (most recent call last):\
+  File "<pyshell#156>", line 1, in <module>\
+    len(filename)\
+NameError: name 'filename' is not defined\
+>>> filename = 'palpe'\
+>>> len(filename)\
+5\
+>>> s= "\{0:9\}\{1:2\}".format(word, 5)\
+>>> "\{0:"+str(len(filename)+4)+"\}\
+SyntaxError: EOL while scanning string literal\
+>>> "\{0:"+str(len(filename)+4)+"\}"\
+'\{0:9\}'\
+>>> "\{0:\{0\}\}".format(len(filename)+4)\
+'        9'\
+>>> "\{0:"+"\{0\}".format(len(filename)+4)+"\}\
+SyntaxError: EOL while scanning string literal\
+>>> "\{0:"+"\{0\}".format(len(filename)+4)+"\}"\
+'\{0:9\}'\
+>>> }
