@@ -18,6 +18,7 @@ def new_sighting(kinds, counts, sighting):
     else:
         kinds.append(sighting)
         counts.append(1)
+    return
 
 
 def new_sighting2(bird_dict, sighting):
@@ -33,7 +34,8 @@ def new_sighting2(bird_dict, sighting):
     else:
         bird_dict[sighting] = 1
     
-    
+
+
 
         
     
